@@ -29,6 +29,10 @@
   max-height: 500px;
 }
 
+.input {
+  background-color: white;
+}
+
 .login-container::-webkit-scrollbar {
   width: 0;
   background: transparent;
@@ -159,4 +163,8 @@
 .toggle-option:focus {
   outline: 0 !important;
   box-shadow: none !important;
+}
+
+input {
+  color: black;
 }

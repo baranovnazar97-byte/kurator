@@ -63,6 +63,7 @@ const LoginPage: React.FC = () => {
               <label htmlFor="fullName">ФИО</label>
               <input
                 id="fullName"
+                className='input'
                 type="text"
                 value={formData.fullName}
                 onChange={handleChange}
@@ -76,6 +77,7 @@ const LoginPage: React.FC = () => {
             <label htmlFor="email">Email</label>
             <input
               id="email"
+              className='input'
               type="email"
               value={formData.email}
               onChange={handleChange}
@@ -90,6 +92,7 @@ const LoginPage: React.FC = () => {
                 <label htmlFor="phone">Телефон</label>
                 <input
                   id="phone"
+                  className='input'
                   type="tel"
                   value={formData.phone}
                   onChange={handleChange}
@@ -102,6 +105,7 @@ const LoginPage: React.FC = () => {
                 <label htmlFor="city">Город</label>
                 <input
                   id="city"
+                  className='input'
                   type="text"
                   value={formData.city}
                   onChange={handleChange}
@@ -114,6 +118,7 @@ const LoginPage: React.FC = () => {
                 <label htmlFor="organization">Учреждение / организация</label>
                 <input
                   id="organization"
+                  className='input'
                   type="text"
                   value={formData.organization}
                   onChange={handleChange}
@@ -128,6 +133,7 @@ const LoginPage: React.FC = () => {
             <label htmlFor="password">Пароль</label>
             <input
               id="password"
+              className='input'
               type="password"
               value={formData.password}
               onChange={handleChange}

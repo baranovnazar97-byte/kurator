@@ -70,27 +70,29 @@ const Cabinet: React.FC = () => {
         {/* Чек-лист материалов */}
         <section className="checklist-section">
           <h2 className="section-title">Чек-лист материалов</h2>
-          <div className="checklist-grid">
-            <div className="dish-checklist">
+          <div className="checklist-vertical">
+            <div className="dish-block">
               <h4>Блюдо 1</h4>
-              <ul>
-                <li>Технологическая карта PDF/DOC</li>
-                <li>Фото блюда JPG/PNG</li>
-              </ul>
+              <div className="material-line">Технологическая карта</div>
+              <div className="format-line">PDF/DOC</div>
+              <div className="material-line">Фото блюда</div>
+              <div className="format-line">JPG/PNG</div>
             </div>
-            <div className="dish-checklist">
+            
+            <div className="dish-block">
               <h4>Блюдо 2</h4>
-              <ul>
-                <li>Технологическая карта PDF/DOC</li>
-                <li>Фото блюда JPG/PNG</li>
-              </ul>
+              <div className="material-line">Технологическая карта</div>
+              <div className="format-line">PDF/DOC</div>
+              <div className="material-line">Фото блюда</div>
+              <div className="format-line">JPG/PNG</div>
             </div>
-            <div className="dish-checklist">
+            
+            <div className="dish-block">
               <h4>Блюдо 3</h4>
-              <ul>
-                <li>Технологическая карта PDF/DOC</li>
-                <li>Фото блюда JPG/PNG</li>
-              </ul>
+              <div className="material-line">Технологическая карта</div>
+              <div className="format-line">PDF/DOC</div>
+              <div className="material-line">Фото блюда</div>
+              <div className="format-line">JPG/PNG</div>
             </div>
           </div>
         </section>

@@ -280,41 +280,37 @@ body {
   margin-bottom: 24px;
 }
 
-.checklist-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.checklist-vertical {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
-.dish-checklist h4 {
+.dish-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dish-block h4 {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
-.dish-checklist ul {
-  list-style: none;
-  padding: 0;
-}
-
-.dish-checklist li {
-  padding: 8px 0 8px 24px;
-  position: relative;
+.material-line {
+  font-size: 14px;
   color: #4a5568;
-  border-bottom: 1px solid #f0f4f8;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
-.dish-checklist li:last-child {
-  border-bottom: none;
-}
-
-.dish-checklist li::before {
-  content: "•";
-  position: absolute;
-  left: 6px;
-  color: black;
-  font-size: 18px;
+.format-line {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
 
 /* Адаптивность */
@@ -324,10 +320,6 @@ body {
   }
   
   .cards-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .checklist-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -343,8 +335,7 @@ body {
     justify-content: center;
   }
   
-  .cards-row,
-  .checklist-grid {
+  .cards-row {
     grid-template-columns: 1fr;
   }
   
